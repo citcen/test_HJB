@@ -93,6 +93,7 @@ $(function(){
         containerTime.removeClass("time-end").addClass("time-start");
         actStart.show();
         actEnd.hide();
+        btnNoClick();
     }
 
     //隐藏时间
