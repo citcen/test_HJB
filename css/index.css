@@ -346,10 +346,10 @@ footer .content-explain .flex-icon .text-icon .iconfont {
 
 #fixed-button .button .bgcolor-mid {
     position: absolute;
-    top: -.01rem;
+    /*top: -.01rem;*/
     left: .02rem;
     width: 2.8rem;
-    height: .58rem;
+    height: .56rem;
     z-index: 3;
 }
 
