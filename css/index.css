@@ -149,12 +149,13 @@ article .act-content .blue-text{
     color: #6cabe0;
     font-weight: 900;
     font-size: .3rem;
+    line-height: 0;
     text-shadow: #000 0 1px 0;
 }
 
 article .act-content .red-text {
     color: #f42042;
-    font-size: .3rem;
+    font-size: .36rem;
     font-weight: 900;
     text-shadow: #000 0 1px 0;
 }
