@@ -337,7 +337,7 @@ footer .content-explain .flex-icon .text-icon .iconfont {
     top: 0.02rem;
     left: .06rem;
     width: 2.72rem;
-    height: .48rem;
+    height: .46rem;
     text-align: center;
     vertical-align: middle;
     line-height: 0;
@@ -349,7 +349,7 @@ footer .content-explain .flex-icon .text-icon .iconfont {
     /*top: -.01rem;*/
     left: .02rem;
     width: 2.8rem;
-    height: .56rem;
+    height: .54rem;
     z-index: 3;
 }
 
@@ -361,7 +361,10 @@ footer .content-explain .flex-icon .text-icon .iconfont {
 
 #fixed-button .btn-buy .bgcolor-mid {  background-color: #d50000;  }
 
-#fixed-button .btn-text {  font-size: .3rem;  }
+#fixed-button .btn-text {
+    font-size: .3rem;
+    font-weight: bold;
+}
 
 #fixed-button .light-dot:after {
     content: "";
