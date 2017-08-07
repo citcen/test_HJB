@@ -1,0 +1,386 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+}
+
+.text {
+    color: #6a2c06;
+    font-size: .16rem;
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size: .16rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.02rem;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 371943 */
+    src: url('http://at.alicdn.com/t/font_cra1lxyvf3vrt3xr.eot');
+    src: url('http://at.alicdn.com/t/font_cra1lxyvf3vrt3xr.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_cra1lxyvf3vrt3xr.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_cra1lxyvf3vrt3xr.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_cra1lxyvf3vrt3xr.svg#iconfont') format('svg');
+}
+
+/*头部样式*/
+header {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    background-image: url("../img/bg-top.jpg");
+    background-size: cover;
+}
+
+header .logo {
+    position: absolute;
+    height: 1.5rem;
+    width: 3.5rem;
+    box-sizing: border-box;
+    padding: 0.15rem 0 0 0.2rem;
+}
+
+header .logo img{
+    float: left;
+    margin-left: 0.12rem;
+}
+
+header .logo .logo-a{
+    height: 0.45rem;
+    width: 1.3rem;
+}
+
+header .logo .logo-line {  height: 0.45rem;  }
+
+/*倒计时样式*/
+header .container-time {
+    position: absolute;
+    top: 4.4rem;
+    left: 50%;
+    margin-left: -2.12rem;
+    width: 4.24rem;
+    height: .84rem;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .1rem;
+}
+
+header .time-start {
+    line-height: 1rem;
+    background-color: #fff900;
+    border: 1px solid #6a2c06;
+    padding: .07rem 0 .07rem .12rem;
+    box-shadow: #6a2c06 1px 1px 1px;
+}
+
+header .time-end {
+    background-color: #d5d4d2;
+    font-size: .26rem;
+    line-height: .84rem;
+    color: #6a2c06;
+}
+
+header .container-time .act-end {  display: none;  }
+
+header .container-time span{
+    display: inline-block;
+    float: left;
+    font-size: .2rem;
+    margin-left: .05rem;
+}
+
+header .container-time span:first-child { margin-left: 0; }
+
+header .container-time .time {
+    width: .46rem;
+    height: .68rem;
+    background-color: #000;
+    color: #fff;
+    font-size: .5rem;
+    text-align: center;
+    line-height: .68rem;
+    border-radius: .1rem .1rem .1rem .1rem;
+}
+
+header .container-time .time-text {
+    color: #f42042;
+    font-size: .22rem;
+    font-weight: 900;
+}
+/*倒计时 end*/
+
+header .text-cue {
+    position: relative;
+    top: 5.56rem;
+    margin: 0 auto;
+    font-size: 0.16rem;
+    text-align: center;
+}
+
+/*中间规则样式*/
+article {
+    position: relative;
+    width: 100%;
+    height: 5.6rem;
+    background-image: url("../img/bg-mid.jpg");
+    background-size: cover;
+}
+
+article .text{  font-size: .22rem;  }
+
+article .act-content {
+    position: relative;
+    top: .7rem;
+    margin: 0 auto;
+    width: 4.82rem;
+    height: 1.22rem;
+}
+
+article .act-content .top-text {
+    display: block;
+    text-align: center;
+}
+
+article .act-content .blue-text{
+    color: #6cabe0;
+    font-weight: 900;
+    font-size: .3rem;
+    text-shadow: #000 0 1px 0;
+}
+
+article .act-content .red-text {
+    color: #f42042;
+    font-size: .3rem;
+    font-weight: 900;
+    text-shadow: #000 0 1px 0;
+}
+
+article .act-time {
+    position: relative;
+    top: 2.65rem;
+    margin: 0 auto;
+    width: 4.82rem;
+    height: 1.22rem;
+}
+
+article .act-time p {  text-indent: .2rem;  }
+
+/* 底部样式 */
+footer {
+    position: relative;
+    width: 100%;
+    height: 6.4rem;
+    background-image: url("../img/bg-bottom.png");
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0 .48rem;
+}
+
+footer .ex-text {
+    position: absolute;
+    bottom: 19%;
+    text-indent: .2rem;
+}
+
+footer .warning-text {
+    position: absolute;
+    right: .12rem;
+    bottom: .94rem;
+    color: #000;
+    font-size: .12rem;
+}
+
+footer .act-rule h4{
+    font-weight: normal;
+    font-size: .2rem;
+    padding: .08rem 0;
+}
+
+footer .act-rule .text {
+    font-size: .2rem;
+    text-indent: -.22rem;
+    margin-left: .22rem;
+    padding: .02rem 0;
+}
+
+footer .act-welfare .border {
+    position: absolute;
+    border: 1px solid #b49701;
+    margin: 0 auto;
+}
+
+footer .act-welfare .border-long{
+    top: 3.12rem;
+    left: .78rem;
+    width: 5.54rem;
+    height: 1.64rem;
+}
+
+footer .act-welfare .border-short{
+    top: 3.07rem;
+    left: .86rem;
+    width: 5.4rem;
+    height: 1.74rem;
+}
+
+footer .act-welfare .content-explain {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+footer .act-welfare .content-explain .flex-icon {
+
+    flex-basis: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+footer .content-explain .flex-icon .text-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 3% 0 8%;
+}
+
+footer .content-explain .flex-icon .text-icon  .ex-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    padding-left: .1rem;
+}
+footer .content-explain .text-icon  .ex-item .item-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+footer .content-explain .text-icon  .ex-item .explain {
+    color: #a67104;
+    font-size: .13rem;
+    padding-top: .03rem;
+}
+
+footer .content-explain .flex-icon .text-icon .iconfont {
+    font-size: .45rem;
+    color: #6a2c06;
+}
+
+
+/* fixed按钮样式 */
+#fixed-button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    /*max-width: 11rem;*/
+    text-align: center;
+}
+
+#fixed-button .button {
+    display: inline-block;
+    position: relative;
+    width: 2.94rem;
+    height: .68rem;
+    box-sizing: border-box;
+    border: solid 4px #6a2c06;
+    z-index: 1;
+}
+
+#fixed-button .border-rad {  border-radius: .3rem;  }
+
+#fixed-button .btn-share {  background-color: #f23d76;  }
+
+#fixed-button .btn-buy {  background-color: #f20015;  }
+
+#fixed-button .button .bgcolor-top {
+    position: absolute;
+    top: 0.02rem;
+    left: .06rem;
+    width: 2.72rem;
+    height: .48rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0;
+    z-index: 5;
+}
+
+#fixed-button .button .bgcolor-mid {
+    position: absolute;
+    left: .02rem;
+    width: 2.8rem;
+    height: .58rem;
+    z-index: 3;
+}
+
+#fixed-button .btn-share .bgcolor-top {  background-color: #f42042;  }
+
+#fixed-button .btn-share .bgcolor-mid {  background-color: #d51b3d;  }
+
+#fixed-button .btn-buy .bgcolor-top {  background-color: #f40000;  }
+
+#fixed-button .btn-buy .bgcolor-mid {  background-color: #d50000;  }
+
+#fixed-button .btn-text {  font-size: .3rem;  }
+
+#fixed-button .light-dot:after {
+    content: "";
+    position: absolute;
+    left: .16rem;
+    top: .05rem;
+    width: .06rem;
+    height: .06rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#fixed-button .light-dot:before {
+    content: "";
+    position: absolute;
+    left: .11rem;
+    top: .13rem;
+    width: .06rem;
+    height: .2rem;
+    background-color: #fff;
+    border-radius: 100% 0;
+}
+
