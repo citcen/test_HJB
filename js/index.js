@@ -14,7 +14,6 @@ function countDown(intDiff, hL, hR, mL, mR, cL, cR, callBack){
             minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hourTwo * 60);
             second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hourTwo * 60 * 60) - (minute * 60);
             if (hour <= 9) {
-
                 hL.html("0");
                 hR.html(hour);
             } else {
@@ -66,23 +65,22 @@ $(function(){
     var secL = $(".sec-l").eq(0);
     var secR = $(".sec-r").eq(0);
 
-    var myDate = new Date();                                //当前时间
+    var myDate = new Date();        //当前时间
     var years = myDate.getFullYear();
     var month = myDate.getMonth() + 1;
     var strDay =  myDate.getDate();
     var hours = myDate.getHours();
     var nowTimeSec = Math.floor(myDate.getTime() / 1000);   //当前时间戳（秒）
 
-    var btnAlink = "#";        //按钮跳转地址
+    var btnAlink = "#";     //按钮跳转地址
 
     // 判断当前时间是否合适，并获取相应时间点
     function judgeTime() {
-        if (strDay >= 4  && strDay <= 8) {      //日期大于4号小于等于8号
+        if (strDay >= 4 && strDay <= 8) {      //日期大于4号小于等于8号
             if (strDay < 8 || (strDay == 8 && hours <= 15)) {       //8号15点前
                 hours >= 9 ? btnOkClick() : btnNoClick();       //9.00-15.00按钮允许点击
                 showTime();
                 countDown(nextTime(nowTimeSec, years, month), hourL, hourR, minL, minR, secL, secR, btnOkClick);
-
             } else  hideTime();
         } else hideTime();
     }
@@ -91,8 +89,8 @@ $(function(){
     // 显示时间
     function showTime() {
         containerTime.removeClass("time-end").addClass("time-start");
-        actStart.show();
         actEnd.hide();
+        actStart.show();
         btnNoClick();
     }
 

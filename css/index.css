@@ -8,7 +8,7 @@ body {
     font-size: .16rem;
 }
 
-.iconfont{
+.iconfont {
     font-family:"iconfont" !important;
     font-size: .16rem;
     font-style: normal;
@@ -43,12 +43,12 @@ header .logo {
     padding: 0.15rem 0 0 0.2rem;
 }
 
-header .logo img{
+header .logo img {
     float: left;
     margin-left: 0.12rem;
 }
 
-header .logo .logo-a{
+header .logo .logo-a {
     height: 0.45rem;
     width: 1.3rem;
 }
@@ -86,7 +86,7 @@ header .time-end {
 
 header .container-time .act-end {  display: none;  }
 
-header .container-time span{
+header .container-time span {
     display: inline-block;
     float: left;
     font-size: .2rem;
@@ -130,7 +130,7 @@ article {
     background-size: cover;
 }
 
-article .text{  font-size: .22rem;  }
+article .text {  font-size: .22rem;  }
 
 article .act-content {
     position: relative;
@@ -195,7 +195,7 @@ footer .warning-text {
     font-size: .12rem;
 }
 
-footer .act-rule h4{
+footer .act-rule h4 {
     font-weight: normal;
     font-size: .2rem;
     padding: .08rem 0;
@@ -214,14 +214,14 @@ footer .act-welfare .border {
     margin: 0 auto;
 }
 
-footer .act-welfare .border-long{
+footer .act-welfare .border-long {
     top: 3.12rem;
     left: .78rem;
     width: 5.54rem;
     height: 1.64rem;
 }
 
-footer .act-welfare .border-short{
+footer .act-welfare .border-short {
     top: 3.07rem;
     left: .86rem;
     width: 5.4rem;
