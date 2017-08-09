@@ -9,11 +9,17 @@ a {
     font-size: .2rem;
 }
 
-a,button,input,optgroup,select,textarea{  -webkit-tap-highlight-color: rgba(0,0,0,0);  }
+a,button,input,optgroup,select,textarea{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
-input,textarea {  -webkit-appearance: none;  }
+input,textarea {
+    -webkit-appearance: none;
+}
 
-a, img {  -webkit-touch-callout: none;  }
+a, img {
+    -webkit-touch-callout: none;
+}
 
 .outer{  zoom: 1;  }
 

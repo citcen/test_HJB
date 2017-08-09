@@ -1,5 +1,5 @@
 
-/*倒计时*/
+// 倒计时
 function countDown(intDiff, hL, hR, mL, mR, cL, cR, callBack){
     var count = window.setInterval(function () {
         var day = 0,
@@ -14,7 +14,6 @@ function countDown(intDiff, hL, hR, mL, mR, cL, cR, callBack){
             minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hourTwo * 60);
             second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hourTwo * 60 * 60) - (minute * 60);
             if (hour <= 9) {
-
                 hL.html("0");
                 hR.html(hour);
             } else {
@@ -50,7 +49,7 @@ function countDown(intDiff, hL, hR, mL, mR, cL, cR, callBack){
 }
 
 $(function(){
-    var containerTime = $("#container-time");        //倒计时容器
+    var containerTime = $("#container-time");       //倒计时容器
     var actStart = containerTime.find(".act-start");
     var actEnd = containerTime.find(".act-end");
 
@@ -66,37 +65,36 @@ $(function(){
     var secL = $(".sec-l").eq(0);
     var secR = $(".sec-r").eq(0);
 
-    var myDate = new Date();                                //当前时间
+    var myDate = new Date();        //当前时间
     var years = myDate.getFullYear();
     var month = myDate.getMonth() + 1;
     var strDay =  myDate.getDate();
     var hours = myDate.getHours();
     var nowTimeSec = Math.floor(myDate.getTime() / 1000);   //当前时间戳（秒）
 
-    var btnAlink = "#";        //按钮跳转地址
+    var btnAlink = "#";     //按钮跳转地址
 
-    //判断当前时间是否合适，并获取相应时间点
+    // 判断当前时间是否合适，并获取相应时间点
     function judgeTime() {
-        if (strDay >= 4  && strDay <= 8) {      //日期大于4号小于等于8号
+        if (strDay >= 4 && strDay <= 8) {      //日期大于4号小于等于8号
             if (strDay < 8 || (strDay == 8 && hours <= 15)) {       //8号15点前
-                hours >= 9 ? btnOkClick() : btnNoClick();   //9.00-15.00按钮允许点击
+                hours >= 9 ? btnOkClick() : btnNoClick();       //9.00-15.00按钮允许点击
                 showTime();
                 countDown(nextTime(nowTimeSec, years, month), hourL, hourR, minL, minR, secL, secR, btnOkClick);
-
             } else  hideTime();
         } else hideTime();
     }
     judgeTime();
 
-    //显示时间
+    // 显示时间
     function showTime() {
         containerTime.removeClass("time-end").addClass("time-start");
-        actStart.show();
         actEnd.hide();
+        actStart.show();
         btnNoClick();
     }
 
-    //隐藏时间
+    // 隐藏时间
     function hideTime() {
         containerTime.removeClass("time-start").addClass("time-end");
         actStart.hide();
@@ -104,21 +102,21 @@ $(function(){
         btnNoClick();
     }
 
-    //按钮禁止点击
+    // 按钮禁止点击
     function btnNoClick() {
         bgBuyBtn.css("background-color", "#e0e0e0");
         bgBuyMid.css("background-color", "#cdcdcd");
         bgBuyTop.css("background-color", "#b2b2b2").find(".btn-text").attr("href", "javascript:;");
     }
 
-    //允许按钮点击
+    // 允许按钮点击
     function btnOkClick() {
         bgBuyBtn.css("background-color", "#f20015");
         bgBuyMid.css("background-color", "#d50000");
         bgBuyTop.css("background-color", "#f40000").find(".btn-text").attr("href", btnAlink);
     }
 
-    //获取到下个倒计时的秒数
+    // 获取到下个倒计时的秒数
     function nextTime(nowTimeSec, years, month) {
         var nextTimeSec = Date.parse(years + "/" + month +"/8 9:00") / 1000;
         return nextTimeSec - nowTimeSec;
